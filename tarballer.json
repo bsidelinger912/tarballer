@@ -1,0 +1,16 @@
+{
+  "defaults": {
+    "remote": "https://s3.amazonaws.com/npm-tarballs/",
+    "exclusions": [
+      "fsevents"
+    ]
+  },
+  "packages": [
+    {
+      "local": "./node_modules",
+      "remote": "bsidelinger@dev-bsidelinger.i.dsc.tv/users/bsidelinger/tarballs/",
+      "privateKey": "/Users/bsidelinger/.ssh/id_rsa",
+      "passphrase": "pwphr"
+    }
+  ]
+}
