@@ -7,7 +7,7 @@ during CI builds. It is currently equipped to work with your existing S3 account
 
 Tarballer is a cli and should be installed globally on both your dev machine and your ci server.
 
-`$ npm install -g tarballer`
+`$ npm install -g @discodigital/tarballer`
 
 In your project run the following to create a default configuration file (tarballer.json):
 

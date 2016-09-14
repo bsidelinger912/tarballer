@@ -1,5 +1,5 @@
 {
-  "name": "tarballer",
+  "name": "@discodigital/tarballer",
   "version": "0.0.1",
   "description": "Fix all your left-pad woes",
   "preferGlobal": true,
