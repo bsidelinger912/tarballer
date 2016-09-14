@@ -57,6 +57,21 @@ A configuration for using your local filesystem would look like this:
 }
 ```
 
+## Using tarballer
+
+Once you've got your configuration set up, run:
+
+`$ tarballer`
+
+This will use your config file to create a tarball(s) and upload to your remote of choice.  Assuming it can connect to the remote successfully you'll see a file called
+`tarballer.lock.json` which holds references to your current tarballs.  This file along with `tarballer.json` should be checked into source control to pin the tarball to the code that relies on it.  
+
+When you want to install packages with tarballer run:
+
+`$ tarballer extract`
+
+This will use the tarballer.lock.json file to download and unpack your packages into the appropriate local folder (node_modules for example).
+
 ## Configuration
 
 The tarballer.json file has two major sections packages and defaults.  If a package is just a string, the string will represent the local folder location and it'll use the defaults for the other configurations.  If the package is an object it'll extend the defaults.  Here are the current configuration options for each package:
